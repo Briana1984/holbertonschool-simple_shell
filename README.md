@@ -12,7 +12,7 @@ Release date April 18, 2023
           <a href=""target="_blank">
                <img alt="code-size" src="https://img.shields.io/github/contributors/Briana1984/holbertonschool-simple_shell" />
           </a>
-          <a href="https://github.com/Biana1984/holbertonschool-simple_shell/blob/master/README.md" target="_blank">
+          <a href="https://github.com/Briana1984/holbertonschool-simple_shell/blob/master/README.md" target="_blank">
                <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen" />
           </a>
      </p>
