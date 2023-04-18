@@ -9,8 +9,8 @@ Release date April 18, 2023
           <a href="https://github.com/Briana1984/holbertonschool-simple_shell/graphs/contributors" target="_blank">
                <img alt="contributors"  src="https://img.shields.io/github/contributors/Briana1984/holbertonschool-simple_shell" />
           </a>
-          <a href=""target="_blank">
-               <img alt="code-size" src="https://img.shields.io/github/contributors/Briana1984/holbertonschool-simple_shell" />
+          <a href="https://github.com/Briana1984/holbertonschool-simple_shell/graphs/contributors" target="_blank"target="_blank">
+               <img alt="code-size" src="https://img.shields.io/tokei/lines/github/Briana1984/holbertonschool-simple_shell />
           </a>
           <a href="https://github.com/Briana1984/holbertonschool-simple_shell/blob/master/README.md" target="_blank">
                <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen" />
