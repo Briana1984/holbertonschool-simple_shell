@@ -26,6 +26,11 @@ typedef struct builtins
 	int (*func)();
 } builtins;
 
+int _strcmp(char *s1, char *s2);
+int stringlength(char *s);
+char *_strdup(char *str);
+int _putchar(char c);
+void dubbie_free(char **dubbie_pointie);
 
 
 
