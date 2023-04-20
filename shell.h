@@ -33,7 +33,8 @@ int _putchar(char c);
 void dubbie_free(char **dubbie_pointie);
 int sh_exit(char **argv, char *buffer);
 int sh_env(void);
-
+char **_get_env(char *env);
+char **_env_parser(char *name);
 
 
 #endif
