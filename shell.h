@@ -35,6 +35,11 @@ int sh_exit(char **argv, char *buffer);
 int sh_env(void);
 char **_get_env(char *env);
 char **_env_parser(char *name);
+int sh_env(void);
+int sh_exit(char **argv, char *buffer);
+char *dir_search(char **argv, char **path_tokens);
+char *executable_maker(char *asdf, char **argv);
+char *_strcat(char *dest, char *src);
 
 
 #endif
