@@ -149,14 +149,14 @@ if (argv != NULL)
 if (_strcmp(argv[0], "exit") == 0)
 {
 sh_exit(argv, buffer);
-return (1);
+return (0);
 }
 for (i = 0; arr[i].func; i++)
 {
 if (_strcmp(argv[0], arr[i].argv) == 0)
 {
 arr[i].func();
-return (1);
+return (0);
 }
 }
 }
