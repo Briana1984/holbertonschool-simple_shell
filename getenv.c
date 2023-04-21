@@ -1,4 +1,4 @@
-#include "header.h"
+#include "shell.h"
 
 /**
  * _get_env - gets the current env
@@ -27,4 +27,14 @@ return (_env_parser(name));
 }
 }
 return (NULL);
+}
+/**
+ * sh_alias - checks for an alias
+ * @argv: arguments
+ * Return: 0
+**/
+int sh_alias(char **argv)
+{
+argv = argv;
+return (0);
 }

@@ -15,7 +15,7 @@ char *asdf = NULL;
 char *store = NULL;
 if (argv[0][0] == '/')
 return (argv[0]);
-for (i = 0; path_tokens[i] != '\0'; i++)
+for (i = 0; !path_tokens[i] == '\0'; i++)
 {
 deer = opendir(path_tokens[i]);
 while ((dir_store = readdir(deer)) != NULL)
@@ -29,6 +29,10 @@ return (store);
 }
 }
 closedir(deer);
+}
+ if (execve(argv[0], argv, NULL) == -1)
+{
+perror("Error:");
 }
 return (NULL);
 }

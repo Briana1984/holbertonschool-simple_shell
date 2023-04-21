@@ -40,7 +40,16 @@ int sh_exit(char **argv, char *buffer);
 char *dir_search(char **argv, char **path_tokens);
 char *executable_maker(char *asdf, char **argv);
 char *_strcat(char *dest, char *src);
-
+extern char **environ;
+int main(int argc, char **argv);
+int shell_loop(int argc, char **argv);
+char **tokenize(char *userinput);
+int executor(char *asdf, char **argv);
+int function_finder(char **argv, char *buffer);
+int sh_cd(char **argv);
+int sh_unsetenv(char **argv);
+int sh_setenv(char **argv);
+int sh_alias(char **argv);
 
 #endif
 
