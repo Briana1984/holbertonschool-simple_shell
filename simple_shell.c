@@ -156,7 +156,7 @@ for (i = 0; arr[i].func; i++)
 if (_strcmp(argv[0], arr[i].argv) == 0)
 {
 arr[i].func();
-return (2);
+return (0);
 }
 }
 }
