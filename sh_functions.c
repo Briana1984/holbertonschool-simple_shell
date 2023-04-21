@@ -34,7 +34,7 @@ int sh_exit(char **argv, char *buffer)
 {
 free(argv);
 free(buffer);
-exit(0);
+exit(2);
 }
 /**
 * sh_setenv - sets the env
