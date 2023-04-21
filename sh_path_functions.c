@@ -48,3 +48,31 @@ newcmd = _strcat(addslash, argv[0]);
 free(addslash);
 return (newcmd);
 }
+
+/**
+*_strcat- entry point
+*description: concatenates two strings
+*@dest: string to copy to
+*@src: string to be copied
+*Return: dest
+**/
+char *_strcat(char *dest, char *src)
+{
+int a, p, x;
+char *newcmd = NULL;
+for (p = 0; dest[p] != '\0'; p++)
+{}
+for (a = 0; src[a] != '\0'; a++)
+{}
+newcmd = malloc(sizeof(char) * (a + p + 1));
+for (x = 0; x < p; x++)
+{
+newcmd[x] = dest[x];
+}
+for (x = 0; x < a; x++)
+{
+newcmd[x + p] = src[x];
+}
+newcmd[x + p] = '\0';
+return (newcmd);
+}
