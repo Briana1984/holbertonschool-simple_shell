@@ -1,21 +1,6 @@
 #include "shell.h"
 
 /**
-* sh_exit - this exits the shell
-* description: exit builtin
-* @argv: argv
-* @buffer: buffer
-*
-* Return: 0
-*/
-int sh_exit(char **argv, char *buffer)
-{
-free(argv);
-free(buffer);
-exit(0);
-}
-
-/**
 * sh_env - prints the environment details
 * description: env builtin
 * Return: 0
@@ -36,4 +21,18 @@ break;
 _putchar('\n');
 }
 return (0);
+}
+
+/**
+* sh_exit - this exits the shell
+* description: exit from simple shell
+* @argv: argv
+* @buffer: buffer
+* Return: 0
+*/
+int sh_exit(char **argv, char *buffer)
+{
+free(argv);
+free(buffer);
+exit(0);
 }
