@@ -10,7 +10,6 @@
 int main(int argc, char **argv)
 {
 shell_loop(argc, argv);
-free(argv);
 return (0);
 }
 
@@ -97,7 +96,7 @@ token_inc++;
 }
 argv[token_inc] = NULL;
 }
-free(userinput);
+/*free(userinput);*/
 return (argv);
 }
 
@@ -122,7 +121,6 @@ else
 {
 wait(NULL);
 }
-free(argv);
 return (0);
 }
 
