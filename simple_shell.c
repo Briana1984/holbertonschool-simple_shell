@@ -11,6 +11,7 @@ int main(int argc, char **argv)
 {
 shell_loop(argc, argv);
 return (0);
+free(argv);
 }
 
 /**
@@ -60,6 +61,7 @@ free(argv);
 }
 free(buffer);
 return (0);
+free(prompt);
 }
 
 /**
@@ -122,6 +124,7 @@ else
 wait(NULL);
 }
 return (0);
+free(asdf);
 }
 
 /**
