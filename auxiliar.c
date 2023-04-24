@@ -55,6 +55,7 @@ return (NULL);
 for (i = 0; i <= len; i++)
 duplicate[i] = str[i];
 return (duplicate);
+free(str);
 }
 
 /**
