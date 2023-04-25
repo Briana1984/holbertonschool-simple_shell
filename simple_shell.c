@@ -117,7 +117,7 @@ perror("Fork failure\n");
 if (child_pid == 0)
 {
 execve(asdf, argv, environ);
-/*free(asdf);*/
+free(asdf);
 }
 else
 {
