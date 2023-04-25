@@ -59,7 +59,6 @@ free(executable);
 free(argv);
 }
 free(buffer);
-free(prompt);
 return (0);
 }
 
