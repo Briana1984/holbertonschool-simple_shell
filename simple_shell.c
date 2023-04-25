@@ -144,7 +144,7 @@ builtins arr[] = {
 {"alias", sh_alias},
 {'\0', NULL}
 };
-if (argv != NULL)
+if (argv != NULL && argv[0] != NULL)
 {
 if (_strcmp(argv[0], "exit") == 0)
 {
