@@ -10,8 +10,8 @@
 int main(int argc, char **argv)
 {
 shell_loop(argc, argv);
-return (0);
 free(argv);
+return (0);
 }
 
 /**
@@ -44,7 +44,7 @@ userinput = getline(&buffer, &bufsize, stdin);
 if (userinput == -1)
 break;
 argv = tokenize(buffer);
-if (argv[0] == NULL)
+if (argv[0] == NULL)	
 continue;
 if (function_finder(argv, buffer) == 1)
 {
@@ -60,8 +60,8 @@ free(executable);
 free(argv);
 }
 free(buffer);
-return (0);
 free(prompt);
+return (0);
 }
 
 /**
@@ -146,7 +146,7 @@ builtins arr[] = {
 {"alias", sh_alias},
 {'\0', NULL}
 };
-if (argv != NULL)
+if (argv != NULL && argv[0] != NULL)
 {
 if (_strcmp(argv[0], "exit") == 0)
 {
@@ -162,5 +162,5 @@ return (0);
 }
 }
 }
-return (0);
+return (1);
 }
