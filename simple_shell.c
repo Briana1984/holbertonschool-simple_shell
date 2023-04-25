@@ -10,7 +10,6 @@
 int main(int argc, char **argv)
 {
 shell_loop(argc, argv);
-free(argv);
 return (0);
 }
 
@@ -118,7 +117,7 @@ perror("Fork failure\n");
 if (child_pid == 0)
 {
 execve(asdf, argv, environ);
-free(asdf);
+/*free(asdf);*/
 }
 else
 {
@@ -146,21 +145,21 @@ builtins arr[] = {
 {"alias", sh_alias},
 {'\0', NULL}
 };
-if (argv != NULL && argv[0] != NULL)
+if (argv != NULL)
 {
 if (_strcmp(argv[0], "exit") == 0)
 {
 sh_exit(argv, buffer);
-return (0);
+return (1);
 }
 for (i = 0; arr[i].func; i++)
 {
 if (_strcmp(argv[0], arr[i].argv) == 0)
 {
 arr[i].func();
-return (0);
-}
-}
-}
 return (1);
+}
+}
+}
+return (0);
 }
