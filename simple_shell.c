@@ -118,13 +118,13 @@ perror("Fork failure\n");
 if (child_pid == 0)
 {
 execve(asdf, argv, environ);
+free(asdf);
 }
 else
 {
 wait(NULL);
 }
 return (0);
-free(asdf);
 }
 
 /**
