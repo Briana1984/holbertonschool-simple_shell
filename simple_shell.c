@@ -82,11 +82,6 @@ if (userinput[i] == ' ')
 {
 tokencount++;
 }
-if ((argv[0] == NULL) || strlen(argv[0]) == 0)
-{
-free(argv);
-exit(EXIT_SUCCESS);
-}
 }
 argv = malloc(8 * (tokencount + 2));
 if (argv != NULL)
