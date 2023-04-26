@@ -58,11 +58,6 @@ if (argv[0][0] != '/')
 free(executable);
 free(argv);
 }
-if ((argv[0] == NULL) || strlen(argv[0]) == 0)
-{
-free(argv);
-exit(EXIT_SUCCESS);
-}
 free(buffer);
 return (0);
 }
@@ -85,7 +80,7 @@ for (i = 0; userinput[i] != '\0'; i++)
 {
 if (userinput[i] == ' ')
 {
-tokencount++;
+perror("Error");
 }
 }
 argv = malloc(8 * (tokencount + 2));
