@@ -80,7 +80,12 @@ for (i = 0; userinput[i] != '\0'; i++)
 {
 if (userinput[i] == ' ')
 {
-perror("Error");
+tokencount++;
+}
+if ((argv[0] == NULL) || strlen(argv[0]) == 0)
+{
+free(argv);
+exit(EXIT_SUCCESS);
 }
 }
 argv = malloc(8 * (tokencount + 2));
