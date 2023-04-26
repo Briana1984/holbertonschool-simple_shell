@@ -32,7 +32,9 @@ closedir(deer);
 }
  if (execve(argv[0], argv, NULL) == -1)
 {
-perror("Error:");
+fprintf(stderr, "./hsh: 1: %s: not found\n", argv[0]);
+exit(127);
+/*perror("Error:");*/
 }
 return (NULL);
 }

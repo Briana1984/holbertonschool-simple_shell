@@ -83,7 +83,7 @@ if (userinput[i] == ' ')
 tokencount++;
 }
 }
-argv = malloc(8 * (tokencount + 2));
+argv = malloc(sizeof(char *)  * (tokencount + 2));
 if (argv != NULL)
 {
 token_inc = 0;
@@ -161,7 +161,7 @@ for (i = 0; arr[i].func; i++)
 if (_strcmp(argv[0], arr[i].argv) == 0)
 {
 arr[i].func();
-return (1);
+return (2);
 }
 }
 }
