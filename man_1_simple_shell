@@ -4,109 +4,93 @@
 
 .TH man 3 "18 April 2023" "1.0" "holberton simple shell man page"
 
-
-
 .SH NAME
 
+    hsh - Holberton Simple Shell: command line interpreter
 
-
-.B hsh
-
-- format and data.
-
-
+.PP
 
 .SH SYNOPSIS
 
-_shell FORMAT [ARGUMENT]...
+.B hsh
 
+[command_string [arg...][file]]
 
+.PP
+
+.SH COPYRIGHT
+
+    Public Domain, no copyright protection
+
+.PP
 
 .SH DESCRIPTION
 
-.B _printf()
+.B hsh
 
-Prints to standard output the
+is a basic imitation of a command line interpreter that reads and implements basic commands from user input as a shell would.
 
-.B format
+.PP
 
-string, interpreting
+.B hsh
 
-.B ‘%’
+ is compiled on Ubuntu 14.04 LTS with gcc 4.8.4 (C90). It is built to run in both interactive and noninteractive mode.
 
-directives to format numeric and string arguments in a way that is mostly similar to the
+.PP
 
-.B C ‘printf’ function.
+.SH USER INPUT
 
-.SH The conversion specifiers
-
-.IP %%
-
-prints a single %
-
-.IP %c
-
-prints the next argument of type Char (int argument is converted to a character)
-
-.IP %s
-
-prints the next argument of type Char * // pointer to a string
-
-.IP %i OR %d
-
-prints the next argument of type int
-
-.IP %b
-
-The unsigned int argument is converted to unsigned binary notation then printed
-
-.IP %u
-
-The unsigned int argument is converted to unsigned decimal notation then printed
-
-.IP %o
-
-The unsigned int argument is converted to unsigned octal notation then printed
-
-.IP %x
-
-The unsigned int argument is converted to unsigned lowercase hexadecimal notation then printed
-
-.IP %X
-
-The unsigned int argument is converted to unsigned uppercase hexadecimal notation then printed
-
-.IP %S
-
-Prints a string. Non printable characters are printed as "\x" followed by their ASCII values in two digit hexadecimal
-
-.IP %r
-
-prints the reversed string
-
-.IP %R
-
-prints the Rot13'ed string
-
-.IP %p
+Once a user inputs a command and hits enter, the shell performs the following actions:
 
 
 
-.SH SEE ALSO
+1. Splits the command into an array of words.
 
 
 
-.I printf(1), printf(3).
+2. Looks for the command.
 
 
+
+3. Executes the command.
+
+.PP
+
+.SH SEARCH FOR COMMAND
+
+When locating a command, the shell looks for a built-in command by that name.
+
+If a built-in command is not found, the shell searches for the command in the PATH.
+
+.PP
+
+.SH EXECUTE COMMAND
+
+Commands are executed in a child process of the main process.
+
+.PP
+
+.SH BUILTINS
+
+.IP env
+
+Prints out all environment variables
+
+.IP exit
+
+Exits process and frees memory allocated.
+
+.PP
 
 .SH BUGS
 
-No known bugs.
+There are memory leaks when exiting the shell.
 
+This will be fixed in a later version of this shell.
 
+.PP
 
-.SH AUTHOR
+.SH AUTHORS
 
  Andrés R. & Briana R.
 
