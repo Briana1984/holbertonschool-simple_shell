@@ -115,11 +115,13 @@ if (child_pid == -1)
 perror("Fork failure\n");
 if (child_pid == 0)
 {
-/**if ((argv[0] == NULL) || strlen(argv[0]) == 0)
-{
-free(asdf);
-exit(EXIT_SUCCESS);
-}*/
+/**
+* if ((argv[0] == NULL) || strlen(argv[0]) == 0)
+* {
+* free(asdf);
+* exit(EXIT_SUCCESS);
+* }
+*/
 execve(asdf, argv, environ);
 free(asdf);
 }
