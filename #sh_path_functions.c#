@@ -30,11 +30,10 @@ return (store);
 }
 closedir(deer);
 }
-if (execve(argv[0], argv, NULL) == -1)
+ if (execve(argv[0], argv, NULL) == -1)
 {
-fprintf(stderr, "./hsh: 1: %s: not found\n", argv[0]);
-exit(127);
-/*perror("Error:");*/
+printf("%s",argv);
+perror("Error:");
 }
 return (NULL);
 }
