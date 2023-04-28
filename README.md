@@ -5,35 +5,21 @@
 Release date April 18, 2023
 
 </p>
-
-          </a>
-	  
-          <a href="https://github.com/Briana1984/holbertonschool-simple_shell/graphs/commit-activity" target="_blank">
-	  
-               <img alt="commit_activity" src="https://img.shields.io/github/commit-activity/y/Briana1984/holbertonschool-simple_shell" />
-	       
-          </a>
-	  
-          <a href="https://github.com/Briana1984/holbertonschool-simple_shell/graphs/contributors" target="_blank">
-	  
-               <img alt="contributors"  src="https://img.shields.io/github/contributors/Briana1984/holbertonschool-simple_shell" />
-	       
-          </a>
-	  
-          <a href="https://github.com/Briana1984/holbertonschool-simple_shell/graphs/contributors" target="_blank"target="_blank">
-	  
-               <img alt="code-size" src="https://img.shields.io/tokei/lines/github/Briana1984/holbertonschool-simple_shell" />
-	       
-          </a>
-	  
-          <a href="https://github.com/Briana1984/holbertonschool-simple_shell/blob/master/README.md" target="_blank">
-	  
-               <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen" />
-	       
-          </a>
-	  
-     </p>
-     
+</a>	  
+<a href="https://github.com/Briana1984/holbertonschool-simple_shell/graphs/commit-activity" target="_blank">
+<img alt="commit_activity" src="https://img.shields.io/github/commit-activity/y/Briana1984/holbertonschool-simple_shell" />
+</a>
+<a href="https://github.com/Briana1984/holbertonschool-simple_shell/graphs/contributors" target="_blank">
+<img alt="contributors"  src="https://img.shields.io/github/contributors/Briana1984/holbertonschool-simple_shell" />
+</a>
+<a href="https://github.com/Briana1984/holbertonschool-simple_shell/graphs/contributors" target="_blank"target="_blank">
+<img alt="code-size" src="https://img.shields.io/tokei/lines/github/Briana1984/holbertonschool-simple_shell" />
+</a>
+<a href="https://github.com/Briana1984/holbertonschool-simple_shell/blob/master/README.md" target="_blank">
+<img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen" />
+</a>
+</p>
+    
 
 
 ## Table of Contents
@@ -41,36 +27,25 @@ Release date April 18, 2023
 * [Introduction](#Introduction)
 
   * What is Shell
-  
   * What is it for
   
 * [Project Information](#Project-Information)
 
     * Tasks
-    
     * Enviroment
-    
     * General requirements
-    
     * Allowed functions
     
 * [Documentation](#Documentation)
 
     * Instalation
-    
     * Testing
-    
     * Files
-    
     * Flowchart
     
 * [Authors](#Authors)
 
-
-
 ## Introduction
-
-
 
 ### What is Shell
 
@@ -82,30 +57,17 @@ A **shell** is a command-line interpreter, it is the computer program that provi
 
 This consists of interpreting orders. It incorporates features such as process control, input/output redirection, law listing and reading, protection, communications, and a command language for writing batch programs or scripts. All Unix-type systems have at least one interpreter compatible with the Bourne shell. The Bourne shell program is found within the Unix file hierarchy at **`/bin/sh`**.
 
-
-
 ## Project Information
-
-
 
 ### Tasks
 
-
-
 * Task 0. README, man_1_simple_shell, AUTHORS
-
 * Task 1. Betty would be proud
-
 * Task 2. Simple shell 0.1
-
 * Task 3. Simple shell 0.2
-
 * Task 4. Simple shell 0.3
-
 * Task 5. Simple shell 0.4
-
 * Task 6. Simple shell 1.0
-
 * Task 7. What happens when you type ls -l in the shell
 
 
