@@ -43,7 +43,7 @@ userinput = getline(&buffer, &bufsize, stdin);
 if (userinput == -1)
 break;
 argv = tokenize(buffer);
-if (argv[0] == NULL)	
+if (argv[0] == NULL)
 continue;
 if (function_finder(argv, buffer) == 1)
 {
